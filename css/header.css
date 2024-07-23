@@ -64,7 +64,7 @@
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .title-container {
         display: flex;
         align-items: center;
@@ -160,13 +160,13 @@
     }
 }
 
-@media (max-width: 378px) {
+@media (max-width: 430px) {
     .title-container {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 1.7rem; /* Default font size */
-        margin-left: 1.5rem;
+        margin-left: 1.2rem;
     }
     .logo {
         width: 3.5rem;
