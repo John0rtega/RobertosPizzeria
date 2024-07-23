@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -41,7 +42,7 @@
       <nav id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#apps">Appetizers</a>
+            <a class="nav-link" href="#apps">Appetizers</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#pizzas">Pizzas</a>
@@ -69,6 +70,10 @@
           </li>
         </ul>
       </nav>
+      <div class="scroll-indicator">
+        <span class="scroll-text">Scroll</span>
+        <span class="scroll-arrow">&#9654;</span>
+      </div>
       <main class="flex-grow-1" id="menu-content">
         <!-- Menu sections will be dynamically loaded here -->
       </main>
@@ -119,5 +124,6 @@
 
     <script src="js/menu.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
