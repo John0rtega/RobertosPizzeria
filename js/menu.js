@@ -65,10 +65,13 @@ function renderMenu(menu, items) {
     // Check if sizes property exists and is an object
     const sizes =
       item.sizes && typeof item.sizes === 'object' ? item.sizes : {};
-    const sizeButtons = Object.keys(sizes)
+    const sizeBoxes = Object.keys(sizes)
       .map(
-        (size, index) => `
-      <button class="size-button" data-price="${sizes[size]}">${size}</button>
+        (size) => `
+        <div class="size-info">
+          <div class="size-box">${size}</div>
+          <div class="price-display">${sizes[size]}</div>
+        </div>
     `
       )
       .join('');
@@ -80,51 +83,15 @@ function renderMenu(menu, items) {
           ${
             item.ingredients
               ? `<p class="card-text">${item.ingredients}</p>`
-              : ''
+              : '<div class="card-text"></div>'
           }
-          <div class="size-info">
-            <p class="size-text">Select a size:</p>
-            <div class="size-buttons">${sizeButtons}</div>
-          </div>
-          <div class="price-display">
-            <p class="price-list">
-              ${Object.values(sizes)[0] || 'Select a size'}
-            </p>
+          <div class="sizes-container">
+            ${sizeBoxes}
           </div>
         </div>
       </div>
     `;
 
     section.appendChild(col);
-
-    // Set the first button as selected by default
-    const buttons = col.querySelectorAll('.size-button');
-    if (buttons.length > 0) {
-      buttons[0].classList.add('selected');
-      col.querySelector('.price-list').textContent =
-        buttons[0].getAttribute('data-price');
-    }
-
-    // Add event listeners for size buttons
-    buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const price = button.getAttribute('data-price');
-        col.querySelector('.price-list').textContent = price;
-        buttons.forEach((btn) => btn.classList.remove('selected')); // Remove selected class from all buttons
-        button.classList.add('selected'); // Add selected class to the clicked button
-      });
-    });
   });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollDownButton = document.getElementById('scroll-down');
-  const menuSection = document.getElementById('sidebar');
-
-  scrollDownButton.addEventListener('click', () => {
-    window.scrollTo({
-      top: menuSection.offsetTop,
-      behavior: 'smooth',
-    });
-  });
-});
