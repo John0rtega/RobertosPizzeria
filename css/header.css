@@ -1,0 +1,184 @@
+/* Base styles for the banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 78vh; /* Default height */
+    overflow: hidden; /* Prevent overflow */
+    background-image: url('../images/MENU.png'); /* Image path */
+    background-size: contain; /* Ensure the image fits */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center top; /* Center the image */
+}
+
+/* Styles for the name and title */
+.name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'BlackBones', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 5rem; /* Default font size */
+    margin-left: 8rem; /* Margin for larger screens */
+}
+
+.robertos, .pizzacafe {
+    font-family: 'BlackBones', sans-serif;
+    display: block; /* Stack vertically */
+    margin: 0;
+    padding: 0;
+}
+
+.robertos {
+    color: red;
+}
+
+.pizzacafe {
+    color: white;
+}
+
+.logo {
+    width: 14rem; /* Default logo size */
+    margin-left: 10px; /* Space between text and logo */
+    vertical-align: top;
+}
+
+.title {
+    font-size: 5rem; /* Default font size */
+    margin-top: -2rem; /* Position title below the logo */
+    color: white;
+    text-align: center;
+    font-family: 'BlackBones', sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem; /* Default font size */
+        margin-left: 2rem; /* Margin for larger screens */
+    }
+    .logo {
+        width: 5.5rem;
+        margin-left: 10px;
+    }
+    .title {
+        font-size: 2rem;
+        margin-top: 0.5rem; /* Reduced top margin */
+        margin-bottom: -0.6rem; /* Adjust bottom margin to avoid cutting off */
+    }
+    .banner {
+        height: 17rem; /* Adjusted height */
+        margin-bottom: -0.8rem; /* Adjusted margin */
+        background-position: center bottom; /* Adjust image position for mobile */
+    }
+}
+
+@media (max-width: 992px) {
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem; /* Default font size */
+        margin-left: 2rem; /* Margin for larger screens */
+    }
+    .logo {
+        width: 5.5rem;
+        margin-left: 10px;
+    }
+    .title {
+        font-size: 2rem;
+        margin-top: 0.5rem; /* Reduced top margin */
+        margin-bottom: -0.6rem; /* Adjust bottom margin to avoid cutting off */
+    }
+    .banner {
+        height: 17rem; /* Adjusted height */
+        margin-bottom: -0.8rem; /* Adjusted margin */
+        background-position: center bottom; /* Adjust image position for mobile */
+    }
+}
+
+@media (max-width: 769px) {
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem; /* Default font size */
+        margin-left: 2rem; /* Margin for larger screens */
+    }
+    .logo {
+        width: 5.5rem;
+        margin-left: 10px;
+    }
+    .title {
+        font-size: 2rem;
+        margin-top: 0.5rem; /* Reduced top margin */
+        margin-bottom: -0.6rem; /* Adjust bottom margin to avoid cutting off */
+    }
+    .banner {
+        height: 17rem; /* Adjusted height */
+        margin-bottom: -0.8rem; /* Adjusted margin */
+        background-position: center bottom; /* Adjust image position for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem; /* Default font size */
+        margin-left: 2rem; /* Margin for larger screens */
+    }
+    .logo {
+        width: 3.5rem;
+        margin-left: 10px;
+    }
+    .title {
+        font-size: 1.5rem;
+        margin-top: 0.5rem; /* Reduced top margin */
+        margin-bottom: -0.6rem; /* Adjust bottom margin to avoid cutting off */
+    }
+    .banner {
+        height: 13rem; /* Adjusted height */
+        margin-bottom: -0.8rem; /* Adjusted margin */
+        background-position: center bottom; /* Adjust image position for mobile */
+    }
+}
+
+@media (max-width: 378px) {
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem; /* Default font size */
+        margin-left: 1.5rem;
+    }
+    .logo {
+        width: 3.5rem;
+        margin-left: 10px;
+    }
+    .title {
+        font-size: 1.5rem;
+        margin-top: 2rem; /* Reduced top margin */
+        margin-bottom: -0.6rem; /* Adjust bottom margin to avoid cutting off */
+    }
+    .banner {
+        height: 13rem; /* Adjusted height */
+        background-position: center bottom -0.9rem; /* Adjust image position for mobile */
+    }
+}

@@ -1,0 +1,76 @@
+/* Base styles for scroll-down and scroll-section */
+.scroll-section {
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+p {
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 60px; /* Adds space between the text and the arrow */
+}
+
+.scroll-down {
+  opacity: 1;
+  transition: all 0.5s ease-in 3s;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  animation: bounce 2s infinite 2s;
+  transform: scale(1);
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Hide the scroll feature on devices wider than 1024px (laptops and larger screens) */
+@media (max-width: 1200px) {
+  .scroll-section {
+    display: none;
+  }
+}
+
+/* Hide the scroll feature on devices narrower than 1024px */
+@media (max-width: 1023px) {
+  .scroll-section {
+    display: none;
+  }
+}

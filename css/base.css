@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'BlackBones';
+    src: url('../fonts/BlackBones.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+}

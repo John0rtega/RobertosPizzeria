@@ -1,0 +1,83 @@
+[
+    {
+      "name": "Tossed Salad",
+      "ingredients": "",
+      "sizes": {
+          "Small": "$5.50",
+          "Large": "$7.50"
+        }
+    },
+    {
+      "name": "Chef Salad",
+      "ingredients": "Provolone, Ham, Cheese",
+      "sizes": {
+          "Small": "$8",
+          "Large": "$10"
+        }
+    },
+    {
+      "name": "Grilled Chicken over Ceaser Salad",
+      "ingredients": "",
+      "sizes": {
+          "Small": "$8",
+          "Large": "$10"
+        }
+    },
+    {
+      "name": "Grilled Chicken over Tossed Salad",
+      "ingredients": "",
+      "sizes": {
+          "Small": "$8",
+          "Large": "$10"
+        }
+    },
+    {
+      "name": "Chicken Cutlet Salad",
+      "ingredients": "",
+      "sizes": {
+          "Small": "$8",
+          "Large": "$10"
+        }
+    },
+    {
+      "name": "Tuna over Tossed Salad",
+      "ingredients": "",
+      "sizes": {
+          "Small": "$8",
+          "Large": "10"
+        }
+    },
+    {
+      "name": "Buffalo Chicken Salad",
+      "ingredients": "w/ Blue Cheese",
+      "sizes": {
+          "Small": "$8",
+          "Large": "$19"
+        }
+    },
+    {
+      "name": "Greek Salad",
+      "ingredients": "Feta Cheese, Kalamata Olives, Pepperoncini, Tomatoes, Onions",
+      "sizes": {
+          "Small": "$8",
+          "Large": "10"
+        }
+    },
+    {
+      "name": "Cobb Salad",
+      "ingredients": "Crumbled Blue Cheese, Bacon, Carrots, Olives, Onions",
+      "sizes": {
+          "Small": "$8",
+          "Large": "10"
+        }
+    },
+    {
+      "name": "Honey Mustard Chicken Strip Salad",
+      "ingredients": "",
+      "sizes": {
+          "Small": "$8",
+          "Large": "10"
+        }
+    }
+  ]
+  

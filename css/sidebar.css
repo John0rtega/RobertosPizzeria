@@ -1,0 +1,215 @@
+/* Base styles */
+body {
+  margin: 0;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row; /* Default horizontal layout */
+  padding: 0;
+}
+
+#sidebar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 46rem;
+  background-color: #000000;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  z-index: 1; /* Ensures it stays above content when scrolling */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+#sidebar .nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#sidebar .nav-item {
+  margin-top: 1.3rem;
+}
+
+#sidebar .nav-link {
+  color: #E31C25; /* Default color */
+  display: block;
+  text-decoration: none;
+  background-color: transparent; /* Default background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  margin-bottom: 1rem;
+}
+
+#sidebar .nav-link.active {
+  color: white; /* Text color for the selected item */
+}
+
+#sidebar .nav-link:hover {
+  color: white; /* Text color on hover */
+}
+
+
+main {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+main section {
+  margin-bottom: 40px;
+}
+
+main section h2 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    /* Change sidebar to horizontal layout and place it above menu-content */
+    .container-fluid {
+      flex-direction: column; /* Stack sidebar on top of content */
+    }
+  
+    #sidebar {
+      height: auto; /* Allow the height to adjust based on content */
+      width: 100%; /* Full width on small screens */
+      overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+      overflow-y: hidden; /* Hide vertical scroll */
+      white-space: nowrap; /* Prevent wrapping of menu items */
+      padding-top: 0; /* Remove extra padding at the top */
+      padding-bottom: 0.5rem; /* Add a little padding at the bottom */
+      margin-top: 1rem;
+      border-bottom: 1px solid #E31C25;
+      border-top: 1px solid #E31C25;
+      transition: scroll-top 0.3s ease; 
+    }
+  
+    #sidebar .nav {
+      position: relative;
+      height: 2rem;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+    }
+  
+    #sidebar .nav-item {
+      display: inline-block;
+      margin: 0 1rem; /* Space out items */
+      font-size: 1.0625rem;
+      line-height: 1.5;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Change sidebar to horizontal layout and place it above menu-content */
+    .container-fluid {
+      flex-direction: column; /* Stack sidebar on top of content */
+    }
+  
+    #sidebar {
+      height: auto; /* Allow the height to adjust based on content */
+      width: 100%; /* Full width on small screens */
+      overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+      overflow-y: hidden; /* Hide vertical scroll */
+      white-space: nowrap; /* Prevent wrapping of menu items */
+      padding-top: 0; /* Remove extra padding at the top */
+      padding-bottom: 0.5rem; /* Add a little padding at the bottom */
+      margin-top: 1rem;
+      border-bottom: 1px solid #E31C25;
+      border-top: 1px solid #E31C25;
+      transition: scroll-top 0.3s ease; 
+    }
+  
+    #sidebar .nav {
+      position: relative;
+      height: 2rem;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+    }
+  
+    #sidebar .nav-item {
+      display: inline-block;
+      margin: 0 1rem; /* Space out items */
+      font-size: 1.0625rem;
+      line-height: 1.5;
+    }
+}
+
+@media (max-width: 768px) {
+  /* Change sidebar to horizontal layout and place it above menu-content */
+  .container-fluid {
+    flex-direction: column; /* Stack sidebar on top of content */
+  }
+
+  #sidebar {
+    height: auto; /* Allow the height to adjust based on content */
+    width: 100%; /* Full width on small screens */
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+    overflow-y: hidden; /* Hide vertical scroll */
+    white-space: nowrap; /* Prevent wrapping of menu items */
+    padding-top: 0; /* Remove extra padding at the top */
+    padding-bottom: 0.5rem; /* Add a little padding at the bottom */
+    margin-top: 1rem;
+    border-bottom: 1px solid #E31C25;
+    border-top: 1px solid #E31C25;
+    transition: scroll-top 0.3s ease; 
+  }
+
+  #sidebar .nav {
+    position: relative;
+    height: 2rem;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+
+  #sidebar .nav-item {
+    display: inline-block;
+    margin: 0 1rem; /* Space out items */
+    font-size: 1.0625rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Change sidebar to horizontal layout and place it above menu-content */
+  .container-fluid {
+    flex-direction: column; /* Stack sidebar on top of content */
+  }
+
+  #sidebar {
+    height: auto; /* Allow the height to adjust based on content */
+    width: 100%; /* Full width on small screens */
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+    overflow-y: hidden; /* Hide vertical scroll */
+    white-space: nowrap; /* Prevent wrapping of menu items */
+    padding-top: 0; /* Remove extra padding at the top */
+    padding-bottom: 0.5rem; /* Add a little padding at the bottom */
+    margin-top: 1rem;
+    border-bottom: 1px solid #E31C25;
+    border-top: 1px solid #E31C25;
+    transition: scroll-top 0.3s ease; 
+  }
+
+  #sidebar .nav {
+    position: relative;
+    height: 2rem;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+
+  #sidebar .nav-item {
+    display: inline-block;
+    margin: 0 1rem; /* Space out items */
+    font-size: 1.0625rem;
+    line-height: 1.5;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling behavior for the whole document */
+}

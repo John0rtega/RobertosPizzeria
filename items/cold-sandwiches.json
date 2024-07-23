@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Ham & Cheese",
+    "ingredients": "Lettuce, Tomato, Balsamic Vinaigrette",
+    "sizes": {
+        "Price": "$6.50"
+      }
+  },
+  {
+    "name": "Ham, Salami & Provolone",
+    "ingredients": "Lettuce, Tomato, Balsamic Vinaigrette",
+    "sizes": {
+        "Price": "$7.50"
+      }
+  },
+  {
+    "name": "Turkey & Cheese",
+    "ingredients": "Lettuce, Tomato, Balsamic Vinaigrette",
+    "sizes": {
+        "Price": "$6.50"
+      }
+  },
+  {
+    "name": "Turkey. Ham & Cheese",
+    "ingredients": "Lettuce, Tomato, Balsamic Vinaigrette",
+    "sizes": {
+        "Price": "$7.50"
+      }
+  },
+  {
+    "name": "Tuna Fish",
+    "ingredients": "Lettuce, Tomato, Balsamic Vinaigrette",
+    "sizes": {
+        "Price": "$7.50"
+      }
+  }
+  ]
+  

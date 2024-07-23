@@ -1,0 +1,87 @@
+[
+    {
+      "name": "Hamburger",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$10"
+        }
+    },
+    {
+      "name": "Turkey Burger Roll",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$10"
+        }
+    },
+    {
+        "name": "6 Oz. Burger w/ Fries",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Cheeseburger",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Italian Hot Dog",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Double Italian Hot Dog",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Italian Sausage",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Chicken Steak w/ Fries",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Italian Turkey Burger w/ Fries",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Philly Cheesesteak w/ Fries",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Gyro Platter",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Gyro Sub",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      }
+    ]
+    

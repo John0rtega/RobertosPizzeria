@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Chicken Cutlet Wrap",
+    "ingredients": "Bruschetta, Mozzarella",
+    "sizes": {
+        "Price": "$10"
+      }
+  },
+  {
+    "name": "Grilled Chicken Wrap",
+    "ingredients": "Cheese, Bacon, Lettuce, Tomato, Ranch Dressing",
+    "sizes": {
+        "Price": "$10"
+      }
+  },
+  {
+    "name": "Buffalo Chicken Wrap",
+    "ingredients": "Lettuce, Tomato, Blue Cheese Dressing",
+    "sizes": {
+        "Price": "$10"
+      }
+  },
+  {
+    "name": "Sauteed Veggie Wrap",
+    "ingredients": "Mushrooms, Onions, Broccoli, Eggplant, Lettuce, Tomato, Ranch Dressing",
+    "sizes": {
+        "Price": "$10"
+      }
+  },
+  {
+    "name": "Honey Mustard Chicken Strips Wrap",
+    "ingredients": "Lettuce, Tomato",
+    "sizes": {
+        "Price": "$10"
+      }
+  }
+  ]
+  

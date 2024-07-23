@@ -1,0 +1,155 @@
+/* Base styles */
+#menu-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+#menu-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px; /* Negative margin to counteract padding */
+}
+
+.card {
+  overflow: hidden;
+  width: 100%; /* Default to full width */
+  max-width: 400px; /* Max width for larger screens */
+  height: 15rem; /* Fixed height for uniform cards */
+  margin: 10px;
+  background-color: black;
+  position: relative;
+  border: 2px solid #E31C25; /* Red border */
+  box-shadow: 0 0 20px rgba(236, 155, 0, 0.7); /* Larger shadow */
+  text-align: center; /* Center align text inside card */
+  display: flex; /* Flexbox to ensure content is centered */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: space-between; /* Space out content evenly */
+}
+
+.card-title {
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+  background: linear-gradient(90deg, rgba(227, 28, 37, 1) 0%, rgba(236, 155, 0, 1) 100%);
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.card-text, .price-list {
+  font-family: 'Roc Grotesk', sans-serif;
+  font-size: 1rem;
+  margin: 10px 0;
+  padding: 0 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.size-info {
+  margin: 10px 0;
+}
+
+.size-text {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.size-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.size-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #E31C25;
+  color: white;
+  border: 2px solid #E31C25;
+}
+
+.size-button:hover {
+  background-color: #ec9b00;
+}
+
+.size-button.selected {
+  background-color: rgba(236, 155, 0, 1);
+  color: white;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+.size-button:active {
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.3);
+  transform: translateY(4px);
+}
+
+.price-display {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Hide the scroll feature on devices wider than 1024px (laptops and larger screens) */
+@media (min-width: 1024px) {
+  .scroll-section {
+    display: flex;
+  }
+}
+
+/* Hide the scroll feature on devices narrower than 1024px */
+@media (max-width: 1023px) {
+  .scroll-section {
+    display: none;
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px), (max-width: 992px) {
+  .card {
+    width: 100%; /* Full width for smaller screens */
+    height: 13rem; /* Fixed height for uniform cards */
+  }
+  .card-title {
+    font-size: 1rem; /* Smaller title font size */
+  }
+  .card-text, .price-list {
+    font-size: 0.875rem; /* Smaller text font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width for smaller screens */
+    height: 13rem; /* Fixed height for uniform cards */
+  }
+  .card-title {
+    font-size: 1rem; /* Smaller title font size */
+  }
+  .card-text, .price-list {
+    font-size: 0.875rem; /* Smaller text font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* Full width on extra small screens */
+    height: 11rem; /* Fixed height for uniform cards */
+    margin: 5px; /* Reduce margin for smaller screens */
+  }
+  .card-title {
+    font-size: 10px; /* Even smaller title font size */
+  }
+  .card-text, .price-list {
+    font-size: 0.75rem; /* Even smaller text font size */
+  }
+}

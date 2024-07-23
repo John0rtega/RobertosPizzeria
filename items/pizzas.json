@@ -1,0 +1,124 @@
+[
+    {
+      "name": "Cheese",
+      "ingredients": "Cheese, Tomato Sauce",
+      "sizes": {
+        "Medium": "$10",
+        "Large": "$12"
+      }
+    },
+    {
+        "name": "Tomato & Basil",
+        "ingredients": "Tomato, Basil, Mozzarella",
+        "sizes": {
+          "Large": "$17"
+        }
+      },
+      {
+        "name": "Square Grandma",
+        "ingredients": "Tomato, Mozzarella, Pepperoni",
+        "sizes": {
+          "Large": "$17"
+        }
+      },
+      {
+        "name": "Anchovies",
+        "ingredients": "",
+        "sizes": {
+          "Medium":"$12",
+          "Large": "$13"
+        }
+      },
+      {
+        "name": "Cheesesteak",
+        "ingredients": "Beefsteak, onions, American Cheese, Tomato Sauce, Mozzarella",
+        "sizes": {
+          "Large": "$17"
+        }
+      },
+      {
+        "name": "Square Grandma",
+        "ingredients": "Tomato, Mozzarella, Pepperoni",
+        "sizes": {
+          "Large": "$17"
+        }
+      },
+      {
+        "name": "Robertos Special",
+        "ingredients": "Italian Sausage, Pepperoni, Onions, Green Peppers, Mushrooms",
+        "sizes": {
+          "Medium":"$14",
+          "Large": "$17"
+        }
+      },
+      {
+        "name": "Veggies",
+        "ingredients": "Broccoli, Spinach, Onion, Green Peppers, Mushrooms",
+        "sizes": {
+          "Medium":"$14",
+          "Large": "$17"
+        }
+      },
+      {
+        "name": "Penne Vodka",
+        "ingredients": "Penne Pasta, Mozzarella, Vodka Sauce",
+        "sizes": {
+          "Medium":"$14",
+          "Large": "$17"
+        }
+      }, 
+    {
+        "name": "Buffalo Chicken",
+        "ingredients": "Buffalo Chicken, Blue Cheese, Hot Sauce, Mozzarella",
+        "sizes": {
+          "Medium": "$14",
+          "Large": "$17"
+        }
+      },
+      {
+        "name": "Margherita",
+        "ingredients": "Tomato Sauce, Garlic, Basil, Mozzarella",
+        "sizes": {
+          "Medium": "$13",
+          "Large": "$16"
+        }
+      },
+      {
+        "name": "Sicilian",
+        "ingredients": "",
+        "sizes": {
+          "Large": "$16"
+        }
+      },
+      {
+        "name": "Hawaiian",
+        "ingredients": "Ham, Pineapple",
+        "sizes": {
+          "Medium": "$13",
+          "Large": "$16"
+        }
+      },
+      {
+        "name": "White Pizza",
+        "ingredients": "Four Cheese",
+        "sizes": {
+          "Medium": "$14",
+          "Large": "$17"
+        }
+      },
+      {
+        "name": "Calzones",
+        "ingredients": "",
+        "sizes": {
+          "Large": "$8"
+        }
+      },
+      {
+        "name": "Stromboli",
+        "ingredients": "",
+        "sizes": {
+          "Large": "$8"
+        }
+      }
+  ]
+  

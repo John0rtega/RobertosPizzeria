@@ -1,0 +1,59 @@
+[
+    {
+      "name": "French Fries",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$10"
+        }
+    },
+    {
+      "name": "Mozzarella Sticks (6 pc.)",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$10"
+        }
+    },
+    {
+        "name": "Chicken Fingers",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Jamaican Beef Patties",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Empanada",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Garlic Bread",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Garlic Knots(6 pc.)",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      },
+      {
+        "name": "Fried Calamari",
+        "ingredients": "",
+        "sizes": {
+            "Price": "$10"
+          }
+      }
+    ]
+    

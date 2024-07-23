@@ -1,0 +1,52 @@
+[
+    {
+      "name": "Chicken Parm",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$8"
+        }
+    },
+    {
+      "name": "Eggplant Parm",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$7"
+        }
+    },
+    {
+      "name": "Meatball Parm",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$7"
+        }
+    },
+    {
+      "name": "Sausage Parm",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$7"
+        }
+    },
+    {
+      "name": "Sausage",
+      "ingredients": "Peppers, Onions",
+      "sizes": {
+          "Price": "$7"
+        }
+    },
+    {
+      "name": "Chicken Cutlet",
+      "ingredients": "Lettuce, Tomato, Mayo",
+      "sizes": {
+          "Price": "$8"
+        }
+    },
+    {
+      "name": "Shrimp Parm",
+      "ingredients": "",
+      "sizes": {
+          "Price": "$9"
+        }
+    }
+  ]
+  
