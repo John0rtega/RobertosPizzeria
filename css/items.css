@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-
 /* Base styles */
 #menu-content {
   display: flex;
@@ -16,26 +15,26 @@
 }
 
 .card {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: space-between; /* Space out content evenly */
   width: 100%; /* Default to full width */
   max-width: 400px; /* Max width for larger screens */
-  height: 15rem; /* Fixed height for uniform cards */
   margin: 10px;
   background-color: black;
   position: relative;
   border: 2px solid #E31C25; /* Red border */
   box-shadow: 0 0 20px rgba(236, 155, 0, 0.7); /* Larger shadow */
   text-align: center; /* Center align text inside card */
-  display: flex; /* Flexbox to ensure content is centered */
-  flex-direction: column; /* Arrange content vertically */
-  justify-content: space-between; /* Space out content evenly */
+  padding: 10px; /* Add padding to ensure content doesn't touch the edges */
+  box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
 .card-title {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0;
+  margin: 0 auto; /* Center the title and remove top margin */
   padding: 5px 10px;
   background: linear-gradient(90deg, rgba(227, 28, 37, 1) 0%, rgba(236, 155, 0, 1) 100%);
   color: #fff;
@@ -43,61 +42,44 @@
   display: inline-block;
 }
 
-.card-text, .price-list {
+.card-text {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  margin: 10px 0;
+  margin-top: 2rem;
   padding: 0 10px;
   line-height: 1.4;
-  text-align: center;
 }
 
 .size-info {
-  margin: 10px 0;
-}
-
-.size-text {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.size-buttons {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 10px 0;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  margin-bottom: 1rem; /* Ensure spacing from bottom */
 }
 
-.size-button {
+.size-box {
   padding: 5px 10px;
-  border: none;
+  margin: 5px;
   border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
   background-color: #E31C25;
   color: white;
   border: 2px solid #E31C25;
-}
-
-.size-button:hover {
-  background-color: #ec9b00;
-}
-
-.size-button.selected {
-  background-color: rgba(236, 155, 0, 1);
-  color: white;
-  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
-  transform: translateY(2px);
-}
-
-.size-button:active {
-  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.3);
-  transform: translateY(4px);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .price-display {
-  text-align: center;
-  margin-top: 10px;
+  color: white;
+  margin-top: 5px;
+}
+
+.sizes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px; /* Add top margin for spacing */
 }
 
 /* Media Queries for Responsiveness */
@@ -120,39 +102,54 @@
 @media (max-width: 1200px), (max-width: 992px) {
   .card {
     width: 100%; /* Full width for smaller screens */
-    height: 13rem; /* Fixed height for uniform cards */
   }
   .card-title {
     font-size: 1rem; /* Smaller title font size */
   }
-  .card-text, .price-list {
+  .card-text {
     font-size: 0.875rem; /* Smaller text font size */
+  }
+  .size-box {
+    font-size: 0.875rem; /* Smaller box font size */
+  }
+  .price-display {
+    font-size: 0.875rem; /* Smaller price font size */
   }
 }
 
 @media (max-width: 768px) {
   .card {
     width: 100%; /* Full width for smaller screens */
-    height: 13rem; /* Fixed height for uniform cards */
   }
   .card-title {
     font-size: 1rem; /* Smaller title font size */
   }
-  .card-text, .price-list {
+  .card-text {
     font-size: 0.875rem; /* Smaller text font size */
+  }
+  .size-box {
+    font-size: 0.875rem; /* Smaller box font size */
+  }
+  .price-display {
+    font-size: 0.875rem; /* Smaller price font size */
   }
 }
 
 @media (max-width: 576px) {
   .card {
     width: 100%; /* Full width on extra small screens */
-    height: 11rem; /* Fixed height for uniform cards */
     margin: 5px; /* Reduce margin for smaller screens */
   }
   .card-title {
     font-size: 1rem; /* Even smaller title font size */
   }
-  .card-text, .price-list {
+  .card-text {
     font-size: 0.75rem; /* Even smaller text font size */
+  }
+  .size-box {
+    font-size: 0.75rem; /* Even smaller box font size */
+  }
+  .price-display {
+    font-size: 0.75rem; /* Even smaller price font size */
   }
 }
