@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
 /* Base styles */
 #menu-content {
   display: flex;
@@ -29,7 +32,7 @@
 }
 
 .card-title {
-  font-family: cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
@@ -41,7 +44,7 @@
 }
 
 .card-text, .price-list {
-  font-family: 'Roc Grotesk', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   margin: 10px 0;
   padding: 0 10px;
@@ -147,7 +150,7 @@
     margin: 5px; /* Reduce margin for smaller screens */
   }
   .card-title {
-    font-size: 10px; /* Even smaller title font size */
+    font-size: 1rem; /* Even smaller title font size */
   }
   .card-text, .price-list {
     font-size: 0.75rem; /* Even smaller text font size */
